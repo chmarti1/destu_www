@@ -1,108 +1,164 @@
 body{
-	margin:0;
-	padding:0;
-	height:100vh;
-	color:#fff;
-	background: linear-gradient(-45deg, #087a75,#7dbcb8,#275586,#4f65b5,#FFFFFF);
-	background-size: 400% 400%;
-	position:relative;
-	animation:change 20s ease-in-out infinite;
-	font-family: Copperplate Gothic Light;
+    margin:0;
+    padding:0;
+    height:100vh;
+    color:#fff;
+    background: linear-gradient(-45deg, #087a75,#7dbcb8,#275586,#4f65b5,#FFFFFF);
+    background-size: 400% 400%;
+    position:relative;
+    animation:change 20s ease-in-out infinite;
+    font-family: Copperplate Gothic Light;
 
 }
 @keyframes change{
-	0%{
-		background-position: 0 50%;
-	}
-	50%{
-		background-position:100% 50%;
-	}
-	100%{
-		background-position: 0 50%;
-	}
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
+
+
+/* Centering is a style intended for a div that wraps
+ * the content of the page to enforce symmetrical margins
+ * for windows wider than the maximum width.  When the 
+ * window is narrower than the maximum width, the internal
+ * objects will enforce their own margins within the centering
+ * div.
+ * .center, on the other hand is intended to be applied directly
+ * to images and objects*/
+.centering{
+    margin: auto;
+    max-width:1200px;
+}
+
 
 header
 {
-	position:relative;
-	max-width:1200px;
-	margin:20px auto;
-	padding:10px;
-	background:#fff;
-	box-sizing:border-box;
-	border-radius:4px;
-	box-shadow:0 2px 5px rgba (0,0,0,.2);
-	font-size:17px;
+    position:relative;
+    /*max-width:1200px;*/
+    margin: 20px;
+    padding:10px;
+    background:#fff;
+    box-sizing:border-box;
+    border-radius:12px;
+    box-shadow:0 2px 5px rgba (0,0,0,.2);
+    font-family: sans;
+    font-size:17px;
 }
-.navbar{
-	
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+
+footer
+{
+    width:100%;
+    text-align:center;
+    margin: 20px;
+    padding:10px;
+    font-size:17px;
 }
+
+
+/* Neatly arrange contact information */
+.contact {
+    font-size: 12px;
+    text-align: left;
+    padding: 20px;
+    display: inline-block;
+    margin:auto;
+}
+
+.content{
+    position:relative;
+    /*max-width:1200px;*/
+    margin: 20px;
+    padding:20px;
+    background:#fff;
+    box-sizing:border-box;
+    border-radius:12px;
+    box-shadow:0 2px 5px rgba (0,0,0,.2);
+    font-style:serif;
+    color:#000;
+    font-size:17px;
+}
+
+.icontent{
+    position:relative;
+    box-sizing:border-box;
+    max-width:1200px;
+    margin: 20px;
+    padding:10px;
+    font-size:17px;
+}
+
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+}
+
 .logo{
-	color:#00008b;
-	height:60px;
-	font-size:30px;
-	line-height:27px;
-	padding: 0 20px;
-	
-	text-align:center;
-	box-sizing:border-box;
-	float:left;
-	font-weight:700;
-	text-decoration:none;
+    color:#00008b;
+    height:60px;
+    font-size:38px;
+    line-height:36px;
+    padding: 0 20px;
+    
+    text-align:right;
+    box-sizing:border-box;
+    float:left;
+    font-weight:700;
+    text-decoration:none;
 }
 nav{
-	float:right;
-	font-weight:bold;
+    float:right;
+    font-weight:bold;
+    font-size:24px;
 }
 .clearfix{
-	clear:both;
+    clear:both;
 }
 nav ul{
-	margin:0;
-	padding:0;
-	display:flex;
+    margin:0;
+    padding:0;
+    display:flex;
 }
 nav ul li{
-	list-style:none;
+    list-style:none;
 }
 nav ul li a{
-	display:block;
-	margin:10px 0;
-	padding:10px 20px;
-	text-decoration:none;
-	color:#262626;
+    display:block;
+    margin:10px 0;
+    padding:10px 20px;
+    text-decoration:none;
+    color:#262626;
 }
 nav ul li a.active,
 nav ul li a:hover{
-	box-shadow: 0 0 10px #73ADD6,
-				0 0 10px #8EF0E2;
-	border-radius:5px;
-	transition:0.5s;
-	color:#8C9292;
-	
+    box-shadow: 0 0 10px #73ADD6,
+                0 0 10px #8EF0E2;
+    border-radius:5px;
+    transition:0.5s;
+    color:#8C9292;
+    
 }
 @media (max-width:1200px){
-	header{
-		margin:20px;
-	}
+    header{
+        margin:20px;
+    }
 }
 img{
 
-	box-shadow: 7px 7px 8px #A9AEB1;
-	margin-top:40px;
-	margin-bottom:10px;
+    box-shadow: 7px 7px 8px #A9AEB1;
+    margin-top:40px;
+    margin-bottom:10px;
 
 
 }
-.center{
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	border-radius:10px;
-}
+
 .dropbtn {
   background-color:transparent;
   font-weight:bold;
@@ -116,11 +172,11 @@ img{
 }
 
 .dropbtn:hover{
-	box-shadow: 0 0 10px #73ADD6,
-				0 0 10px #8EF0E2;
-	border-radius:5px;
-	transition:0.5s;
-	color:#8C9292;
+    box-shadow: 0 0 10px #73ADD6,
+                0 0 10px #8EF0E2;
+    border-radius:5px;
+    transition:0.5s;
+    color:#8C9292;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -143,20 +199,22 @@ img{
   text-decoration: none;
   display: block;
   font-size:17px;
-	
+    
 
 }
 .dropdown-content a:hover{
-	box-shadow: 0 0 10px #73ADD6,
-				0 0 10px #8EF0E2;
-	border-radius:5px;
-	transition:0.5s;
-	color:#8C9292;
+    box-shadow: 0 0 10px #73ADD6,
+                0 0 10px #8EF0E2;
+    border-radius:5px;
+    transition:0.5s;
+    color:#8C9292;
 
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-		border-radius:5px;
+        border-radius:5px;
   display: block;
   
 }
+
+

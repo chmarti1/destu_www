@@ -1,0 +1,21 @@
+Using ffmpeg (available on Linux and Windows) from the command line to embed subtitles from an srt file.
+
+Assuming we have an mp4 file and an srt file, 
+
+    a.mp4   a.srt
+
+The command below produced an mp4 with embedded subtitles
+
+    a2.mp4
+
+"""
+$ ffmpeg -i a.mp4 -i a.srt -c:v copy -c:a copy -c:s mov_text a2.mp4
+"""
+
+ffmpeg uses -i to specify an input file
+-c specifies a codec for the stream type specified after the :
+:v video
+:a audio
+:s subtitle
+
+Specifying copy means there is no re-rendering nor re-encoding of audio.
