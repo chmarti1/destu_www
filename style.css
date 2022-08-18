@@ -3,12 +3,12 @@ body{
     padding:0;
     height:100vh;
     color:#fff;
-    background: linear-gradient(-45deg, #087a75,#7dbcb8,#275586,#4f65b5,#FFFFFF);
+    /* background: linear-gradient(-45deg, #087a75,#7dbcb8,#275586,#4f65b5,#FFFFFF); */
+    background: linear-gradient(to right, #314D64, #3EA39E 800px);
     background-size: 400% 400%;
     position:relative;
     /*animation:change 20s ease-in-out infinite;
     /*font-family: Copperplate Gothic Light;*/
-
 }
 @keyframes change{
     0%{
@@ -47,7 +47,8 @@ header
     box-sizing:border-box;
     border-radius:12px;
     box-shadow:0 2px 5px rgba (0,0,0,.2);
-    font-family: sans;
+    font-weight:bold;
+    font-family: Roboto, sans;
     font-size:17px;
 }
 
@@ -58,8 +59,28 @@ footer
     margin: 20px;
     padding:10px;
     font-size:17px;
+    font-family:Roboto,sans;
 }
 
+footer a,
+footer a:active,
+footer a:hover,
+footer a:visited
+{
+    color: white;
+}
+
+a,
+a:visited,
+a:active
+{
+    color:#1E407C;
+}
+
+a:hover
+{
+    color:black;
+}
 
 /* Neatly arrange contact information */
 .contact {
@@ -84,7 +105,7 @@ footer
     box-sizing:border-box;
     border-radius:12px;
     box-shadow:0 2px 5px rgba (0,0,0,.2);
-    font-style:serif;
+    font-family:serif;
     color:#000;
     font-size:17px;
 }
@@ -108,20 +129,20 @@ footer
 .logo{
     color:#00008b;
     height:60px;
-    font-size:38px;
-    line-height:36px;
+    font-size:42px;
+    line-height:42px;
     padding: 0 20px;
     
     text-align:right;
     box-sizing:border-box;
     float:left;
-    font-weight:700;
+    font_family:Roboto,sans;
     text-decoration:none;
 }
 nav{
     float:right;
     font-weight:bold;
-    font-size:24px;
+    font-size:28px;
 }
 .clearfix{
     clear:both;
@@ -143,8 +164,10 @@ nav ul li a{
 }
 nav ul li a.active,
 nav ul li a:hover{
+    /*
     box-shadow: 0 0 10px #73ADD6,
                 0 0 10px #8EF0E2;
+                */
     border-radius:5px;
     transition:0.5s;
     color:#8C9292;
@@ -167,7 +190,7 @@ img{
 .dropbtn {
   background-color:transparent;
   font-weight:bold;
-  font-family: Copperplate Gothic Light;
+  font: Roboto, sans;
   padding: 10px 20px;
   margin-top:10px;
   font-size: 17px;
@@ -176,6 +199,7 @@ img{
   text-decoration:none;
 }
 
+/*
 .dropbtn:hover{
     box-shadow: 0 0 10px #73ADD6,
                 0 0 10px #8EF0E2;
@@ -183,6 +207,7 @@ img{
     transition:0.5s;
     color:#8C9292;
 }
+*/
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -208,13 +233,16 @@ img{
 
 }
 .dropdown-content a:hover{
+    /*
     box-shadow: 0 0 10px #73ADD6,
                 0 0 10px #8EF0E2;
+                */
     border-radius:5px;
     transition:0.5s;
     color:#8C9292;
 
 }
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
         border-radius:5px;
