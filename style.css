@@ -6,8 +6,8 @@ body{
     background: linear-gradient(-45deg, #087a75,#7dbcb8,#275586,#4f65b5,#FFFFFF);
     background-size: 400% 400%;
     position:relative;
-    animation:change 20s ease-in-out infinite;
-    font-family: Copperplate Gothic Light;
+    /*animation:change 20s ease-in-out infinite;
+    /*font-family: Copperplate Gothic Light;*/
 
 }
 @keyframes change{
