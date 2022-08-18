@@ -5,7 +5,6 @@ body{
     color:#fff;
     /* background: linear-gradient(-45deg, #087a75,#7dbcb8,#275586,#4f65b5,#FFFFFF); */
     background: linear-gradient(to right, #314D64, #3EA39E 800px);
-    background-size: 400% 400%;
     position:relative;
     /*animation:change 20s ease-in-out infinite;
     /*font-family: Copperplate Gothic Light;*/
@@ -48,7 +47,7 @@ header
     border-radius:12px;
     box-shadow:0 2px 5px rgba (0,0,0,.2);
     font-weight:bold;
-    font-family: Roboto, sans;
+    font-family: Roboto, sans-serif;
     font-size:17px;
 }
 
@@ -136,10 +135,11 @@ a:hover
     text-align:right;
     box-sizing:border-box;
     float:left;
-    font_family:Roboto,sans;
+    font-family:Roboto,sans-serif;
     text-decoration:none;
 }
 nav{
+    font-family:Roboto,sans-serif;
     float:right;
     font-weight:bold;
     font-size:28px;
